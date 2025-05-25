@@ -1,0 +1,15 @@
+dependencies:
+  - changed-files:
+      - any-glob-to-any-file: ['package.json', 'pnpm-lock.yaml', 'poetry.lock', 'requirements*.txt']
+
+frontend:
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.tsx', '**/*.ts', 'next.config.js']
+
+python:
+  - changed-files:
+      - any-glob-to-any-file: ['mcp-nexus/**', '**/*.py']
+
+ci:
+  - changed-files:
+      - any-glob-to-any-file: ['.github/workflows/*']

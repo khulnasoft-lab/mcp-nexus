@@ -1,0 +1,4 @@
+{
+    "transforms": ["str.strip", "str.lower"],
+    "assertions": ["lambda x: len(x) > 3"]
+}
