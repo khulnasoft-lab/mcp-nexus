@@ -24,7 +24,10 @@ jobs:
         uses: pnpm/action-setup@v3
         with:
           version: 8
-          run_install: true  # ✅ Automatically runs `pnpm install`
+          run_install: true
+
+      - name: Verify pnpm installation
+        run: pnpm --version
 
       - name: 🧪 Type check
         run: pnpm tsc --noEmit
